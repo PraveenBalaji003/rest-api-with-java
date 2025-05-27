@@ -27,3 +27,28 @@ Description - about the project
 Packaging - Jar
 Java - Java Language Version
 
+
+Java JSON Data Binding
+
+Data Binding is the process of coverting JSON data to Java POJO(Plain Old Java Object)
+
+JSON----to----->Java POJO
+      Data Binding
+
+JSON<----to-----Java POJO
+      Data Binding
+      
+This process is also known as Serialization/ Deserialization, Marshalling/ UnMarshalling 
+
+
+Jackson
+Spring uses the Jackson for Data Binding behind the scenes.
+By default, Jackson will call appropriate getter/ setter method.
+When Building Spring REST applications, Spring will automatically handle Jackson Integration
+
+
+Project Lombok
+Lombok is a Java library that provides annotations to simplify Java development by automating the generation of boilerplate code.
+Features include automatic generation of -
+getters, setters, equals, hashCode, and toString methods
+
