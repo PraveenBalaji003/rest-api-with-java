@@ -1,0 +1,41 @@
+REST -
+
+* REST stands for the Representational State Transfer
+
+* Lightweight approach for communicating between the applications
+
+* REST calls can be made over HTTP
+
+What programming lanuage do we use ?
+
+* REST is language independent
+
+* The client application can use ANY programming language
+
+* The server aplication can use ANY programming language
+
+What is the data format? 
+
+* REST application use any data format
+
+* Commonly see XML and JSON
+
+* JSON is most popular and modern. JSON standards for Java Script Object Notation
+
+
+Example
+
+Customer Relationship Manager (CRM) App
+
+CRM App  -----------Get customers----------------> CRM service(spring-rest) 
+
+CRM App <-------------Customer list--------------- CRM service(spring-rest) 
+
+
+CRM app would be web app, mobile app or any other app
+In this course, We will create this code(CRM service(spring-rest) ) Spring REST(SERVER) 
+
+
+What do we call it ?
+
+REST API, REST Web Services, REST Services, RESTful API, RESTful Web Services, RESTful Services - Generally all are same.
