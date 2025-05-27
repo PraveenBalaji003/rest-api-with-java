@@ -2,7 +2,7 @@ REST -
 
 * REST stands for the Representational State Transfer
 
-* Lightweight approach for communicating between the applications
+* It is an architectural style and lightweight approach for communicating between the applications
 
 * REST calls can be made over HTTP
 
@@ -39,3 +39,103 @@ In this course, We will create this code(CRM service(spring-rest) ) Spring REST(
 What do we call it ?
 
 REST API, REST Web Services, REST Services, RESTful API, RESTful Web Services, RESTful Services - Generally all are same.
+
+JSON :
+
+What is JSON?
+JSON stands for Java Script Object Notation. 
+Its basically a lightweight data format for storing and exchanging data.
+And its language independent... not just for java script.
+JSON is just a plain text data.
+
+
+JSON Values
+
+* Numbers: no quotes
+* String: in double quotes
+* Boolean: true, false
+* Nested JSON object
+* Array
+* null
+* Nested JSON objects
+Ex: -
+{
+"address":{
+	   "state": "Tamilnadu",
+	   "city": "Salem"
+	   }
+}
+* JSON Arrays
+{
+"languages": ["Tamil", "English"]
+}
+
+
+REST over HTTP -
+
+* Most common use of REST is over HTTP
+
+* Leverage HTTP methods for CRUD operations
+
+HTTP Method - POST
+CRUD operation - Create a new entity
+
+HTTP Method - GET
+CRUD operation - Read a list of entities or single entity
+
+
+HTTP Method - PUT
+CRUD operation - Updating an existing entity
+
+
+HTTP Method - DELETE
+CRUD operation - Delete an existing entity
+
+
+HTTP Messages
+
+CRM App(client) --------------------------- HTTP Request Message -----------> CRM REST Service(server)
+
+CRM App(client) <--------------------------- HTTP Response Message ----------- CRM REST Service(server)
+
+Request Message -
+
+Request Message has 3 main parts.
+* Request Line - HTTP command - POST or GET or PUT or DELETE
+* Header variables - request meta data - additional information about the request
+* Message Body - actual contents of message
+
+And Response Message has 3 main parts.
+* Response Line - server protocol and status code - status code could be the one of the HTTP status code like 200, 500
+* Header variables - response metadata - content type of the data xml/json, size or length of data
+* Message Body - contents of message
+
+
+HTTP Response - Status Code 
+
+Code Range -          Description
+
+100-199              Informational
+200-299  	     Successful
+300-399              Redirection
+400-499              Client error (401 - Authentication Required, 404 - File Not Found)
+500-599              Sever Error (500 - Internal Server Error)
+
+
+MIME Content Types
+
+* This is basically a message format for the actual payload.
+MIME stands for Multipurpose Internet Mail-Extension
+
+* Basic Syntax: type/sub-type
+* Examples: text/html, text/plain, application/xml, application/json
+
+
+
+Client Tool
+
+To interact with our rest api we need a client tool.
+
+Plenty of tools available: curl, Postman, etc ...
+
+We are going to use Swagger
