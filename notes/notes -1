@@ -1,0 +1,29 @@
+HTTP Request Methods 
+
+
+CRUD                       HTTP Request Methods 
+
+Create 			   POST
+
+Read			   GET
+
+Update			   PUT
+
+Delete                     DELETE
+
+
+
+Spring Initializr
+
+Website - start.spring.io
+
+Project - Maven
+Language - Java
+Dependencies - Spring Web(Spring web allows us to create RESTful web services using spring boot)
+version - any (other than snapshot - under development)
+Group - package name
+Artifact, Name - project name
+Description - about the project
+Packaging - Jar
+Java - Java Language Version
+
